@@ -1,4 +1,5 @@
 baseURL = 'https://digital-vibe.netlify.app/'
 languageCode = 'en-us'
 title = 'AI Prompts Blog'
-theme = 'ananke'
+[params]
+  description = 'AI prompts, tools, and strategies for productivity and sales'

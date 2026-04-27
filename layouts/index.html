@@ -1,0 +1,19 @@
+{{ define "main" }}
+<h1>{{ .Site.Title }}</h1>
+{{ if .Site.Params.description }}
+<p>{{ .Site.Params.description }}</p>
+{{ end }}
+
+<h2>Latest Posts</h2>
+<ul class="post-list">
+{{ range .Site.RegularPages }}
+    <li>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+        {{ if .Summary }}
+        <p>{{ .Summary }}</p>
+        {{ end }}
+    </li>
+{{ end }}
+</ul>
+{{ end }}
