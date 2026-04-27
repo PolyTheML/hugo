@@ -1,1 +1,4 @@
-baseURL = " https://digital-vibe.netlify.app/\n
+baseURL = 'https://digital-vibe.netlify.app/'
+languageCode = 'en-us'
+title = 'AI Prompts Blog'
+theme = 'ananke'
